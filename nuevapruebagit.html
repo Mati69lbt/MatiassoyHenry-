@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+</head>
+<body>
+    <h1>GitHub</h1>
+    <script>
+    function dd(){
+        if (arguments.length === 0 ) return 0;
+          if (arguments.length === 1 ) return arguments[0];
+          var total = 1
+          for ( i = 0; i < arguments[i]; i ++){
+            total = total * arguments[i]
+          } return total
+        }
+        console.log(dd())
+        console.log(dd(4))
+        console.log(dd(3,4,5))
+        console.log(dd(a))
+        console.log(dd(b))
+        console.log(dd(c))
+        console.log(dd(d))
+        
+        
+        function contarElementos(array){
+            var contador = 0;
+            for(i = 0; i < array.length; i++){
+                if (array[i] > 10){
+                    contador ++
+                }
+            } return contador
+        }
+        var e = [3,6,12,3,14,5,34,54,16,1,9,3]
+        console.log(contarElementos(e))
+        
+        f = 9567
+        g = f+""
+        console.log(g)
+        console.log(g[2])
+        
+        
+        function empiezaconocho(numero){
+            numero = numero.toString();
+            if (numero.charAt(0) === "8"){
+                return true
+            }   return false
+        }
+        console.log(empiezaconocho("89"))
+        console.log(empiezaconocho("98"))
+        
+        function mesesExclusivos(meses){
+          añonuevo = []
+          for (i = 0; i < meses.length; i++){
+              if(meses[i] === "Marzo" || meses[i] === "Agosto" || meses[i] === "Noviembre"){
+                  añonuevo.push(meses[i])
+              }
+          } if(añonuevo.length < 3){
+              return "No se encontraron los meses";
+          }  else {
+                 return añonuevo
+          }
+        }
+        
+        var h = ["Enero", "Febrero","Julio"]
+        var j = ["Septiembre","Noviembre","Agosto","Marzo","Enero","Diciembre","Febrero","Octubre","julio","Junio","Mayo","Abril"]
+        
+        console.log(mesesExclusivos(h))
+        console.log(mesesExclusivos(j))
+        
+        
+        function matriz(n,m){
+            for(i = 0; i < n; i++){
+                for (j = 0; j < m; j++){
+                 console.log(i + " " + j)}
+                }
+            }
+        matriz(3,3)
+    </script>
+</body>
+</html>
